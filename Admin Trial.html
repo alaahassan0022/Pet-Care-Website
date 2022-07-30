@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Admin</title>
+    <style>
+        #hdv a:hover {
+            background-color: #571456;
+            color: white;
+        }
+
+      
+
+
+        li {
+            margin:10px;
+        }
+
+        /*  li:hover {
+                background-color: #571456;
+                color: white;
+                cursor: pointer;
+            }
+
+      */
+
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-family: 'Century Gothic';
+            background-color: #F9E2FF;
+        }
+
+
+       
+
+        #nav {
+            width: 60%;
+            height: 50px;
+            text-align: center;
+            float: right;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+            #nav a {
+                line-height: 50px;
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                padding: 15px;
+                border-left: solid 1px lightgray;
+                
+            }
+
+         a {
+            line-height: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 5px;
+        }
+        
+            a:hover {
+                background-color: #571456;
+                color: white;
+            }
+
+        #hdv {
+            height: 80px;
+            background: white;
+            color: black;
+            font-family: 'Century Gothic';
+            font-size: 16px;
+            border-bottom: solid 0.5px lightgray;
+            position: fixed;
+            width: 100%;
+        }
+
+        #content {
+            padding-top: 85px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            background-color: white;
+            margin-top: 40px;
+            padding: 10px;
+        }
+
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+        }
+
+            .dropdown-content a {
+                color: black;
+                text-decoration: none;
+                display: block;
+            }
+
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            border: solid 1px lightgray;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+         button{
+             font-family:'Century Gothic';
+         }
+        
+    </style>
+
+    <script>
+        function sth(){
+            return true;
+        }
+    </script>
+</head>
+<body id="bk">
+        <header>
+            <div id="hdv">
+
+                <h3 style=" float: left; margin-top:28px;">   &nbsp;&nbsp;All About Pets</h3>
+                <nav id="nav">
+
+
+                    <a href="Home.html" style="border-left-style:none;">&nbsp;Home</a>
+                    <div class="dropdown">
+                        <a style=" cursor:pointer; ">&nbsp;Services </a>
+                        <div class="dropdown-content">
+                            <a style="display:block; padding:1px;border-left:none;" href="Shelters.html">Shelters</a>
+                            <a style="display: block; padding: 1px; border-left:none; border-top:solid 0.5px lightgray;" href="Vets.html">Vets</a>
+
+                        </div>
+                    </div>
+                    <a href="Pets Info.html">&nbsp;Pets Info </a>
+                    <a href="Health Tips.html">&nbsp;Health Tips </a>
+                    <a href="Register.html">&nbsp;Register </a>
+                    <a href="Login.html">&nbsp;Login </a>
+                    <a href="Logout.html">&nbsp;Logout </a>
+                </nav>
+            </div>
+
+        </header>
+
+    <div id="content">
+
+        <div style="background-color: white; width: 100%; height: 50px; margin-top: 40px; ">
+            <ul style="list-style: none; ">
+
+                <li style=" width: 30%; float: left; margin:14px;">
+                    <a href=" " style="  ">
+                        Add
+                    </a>
+                    <input type="text" style="  " />
+                </li>
+                <li style="width: 50%; float: right; padding: 0px; margin:14px; padding:0px;">
+                    <p style=" float: right; margin: 0px; padding: 0px; ">
+                        Remove : &nbsp;
+                        <button style="cursor:pointer;">Picture 1</button>&nbsp;
+                        <button style="cursor:pointer;">Picture 2</button>&nbsp;
+                        <button style="cursor:pointer;">Picture 3</button>&nbsp;
+                        <button style="cursor:pointer;">Picture 4</button>&nbsp;
+                        <button style="cursor:pointer;">Picture 5</button>&nbsp;
+                    </p>
+                </li>
+
+
+            </ul>
+        </div>
+        <h1> Welcome!</h1>
+
+    </div>
+</body>
+</html>

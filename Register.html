@@ -1,0 +1,230 @@
+﻿<html>
+<head>
+    <title>Register</title>
+    <style>
+        #nav {
+            width: 60%;
+            height: 50px;
+            text-align: center;
+            float: right;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+            #nav a {
+                line-height: 50px;
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                display: inline;
+                padding: 15px;
+                border-left: solid 1px lightgray;
+            }
+
+
+        #hdv {
+            height: 80px;
+            background: white;
+            color: black;
+            font-family: 'Century Gothic';
+            font-size: 16px;
+            border-bottom: solid 0.5px lightgray;
+            width: 100%;
+        }
+
+        #content {
+            /**/100px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+        }
+
+            .dropdown-content a {
+                color: black;
+                text-decoration: none;
+                display: block;
+            }
+
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            border: solid 1px lightgray;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url("login-logout-background.png");
+            background-repeat: no-repeat;
+            background-size: 1400px 700px;
+            position:fixed;
+            /**/
+        }
+        #content{
+            padding-top:69px;
+
+        }
+        .register-page {
+            width: 460px;
+            padding: 5% 0 0;
+            margin: auto;
+        }
+
+        .form {
+            position: relative;
+            z-index: 1;
+            background: none;
+            max-width: 360px;
+            margin: 0 auto 300px;
+            padding: 45px;
+            text-align: center;
+        }
+
+            .form input {
+                background: white;
+                margin: 0 0 15px;
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            .form .button {
+                text transform :uppercase;
+                outline: 0;
+                background: 4CAF50;
+                background-color: lightgray;
+                width: 100%;
+                border: 0;
+                padding: 15px;
+                color: #ffffff;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+                .form .button:hover, .form .button:active {
+                    background: #43A047;
+                }
+
+            .form .message {
+                margin: 15px 0 0;
+                color: black;
+                font-size: 16px;
+            }
+
+            .form .login-form {
+                display: none;
+            }
+
+        #nav #current {
+            background-color: #571456;
+            color: white;
+        }
+
+        #nav a:hover {
+            background-color: #571456;
+            color: white;
+        }
+
+        #nav #servID:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function check(form) {
+
+            if (form.un.value == "Admin1") {
+                window.location.href = "Home - Copy.html";
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+
+    <header>
+        <div id="hdv">
+
+            <h3 style=" float: left; margin-top:28px;"><a style="text-decoration:none; color:black;" href="Home.html">  &nbsp;&nbsp;All About Pets</a> </h3>
+            <nav id="nav">
+
+
+                <a href="Home.html" style="border-left-style:none;">&nbsp;Home</a>
+                <div class="dropdown">
+                    <a style=" cursor:pointer;" id="servID">&nbsp;Services </a>
+                    <div class="dropdown-content">
+                        <a style="display:block; padding:1px;border-left:none;" href="Shelters.html">Shelters</a>
+                        <a style="display: block; padding: 1px; border-left:none; border-top:solid 0.5px lightgray;" href="Vets.html">Vets</a>
+
+                    </div>
+                </div>
+                <a href="Pets Info.html">&nbsp;Pets Info </a>
+                <a href="Health Tips.html">&nbsp;Health Tips </a>
+                <a href="Register.html" id="current">&nbsp;Register </a>
+                <a href="Login.html">&nbsp;Login </a>
+                <a href="Logout.html">&nbsp;Logout </a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <div class="login-page" id="content">
+        <div class="form">
+            <form class="register-form" action="Home.html">
+                <input type="text" placeholder="User Name" pattern="(?=.*\d)(?=.*[A-Z]).{4,}" title="Must contain at least one number and one uppercase and
+        and at least 4 or more characters" data-required required />
+
+                <input type="password" placeholder="Password" pattern=".{6,}"
+                       title="Six or more characters" required />
+
+                <input type="email" placeholder="Email ID" required /><br>
+                <button class="button"> Create </button>
+
+                <p class="message">Already Registered? <a href="#">Login </a></p>
+
+            </form>
+            <form class="login-form" action="Home.html">
+                <input type="text" name="un" placeholder="User Name" pattern="(?=.*\d)(?=.*[A-Z]).{4,}" title="Must contain at least one number and one uppercase and
+        and at least 4 or more characters" data-required required />
+                <input type="password" placeholder="Password" pattern=".{6,}"
+                       title="Six or more characters" required />
+                <button id="button" class="button">Login</button>
+                <br /><br />
+                <input type="button" value="Login As Admin?" onclick="check(this.form)" class="button" style="">
+                <p class="message">Not Registered? <a href="#">Register </a></p>
+            </form>
+
+        </div>
+    </div>
+
+    <script src='JavaScript1.js'>
+    </script>
+    <script>
+        $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+    </script>
+
+</body>
+
+</html>
