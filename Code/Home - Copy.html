@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>All About Pets | Home</title>
+    <style>
+
+     html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: Verdana, sans-serif;
+        background-image: url("home-background-new.jpg");
+        background-repeat: no-repeat;
+    }
+
+
+    #nav {
+        width: 60%;
+        height: 50px;
+        text-align: center;
+        float: right;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+        #nav a {
+            line-height: 50px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            display: inline;
+            padding: 15px;
+            border-left: solid 1px lightgray;
+        }
+
+
+
+    #hdv {
+        height: 80px;
+        background: white;
+        color: black;
+        font-family: 'Century Gothic';
+        font-size: 16px;
+        border-bottom: solid 0.5px lightgray;
+        /**/
+        width: 100%;
+    }
+
+    
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+    }
+
+        .dropdown-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        border: solid 1px lightgray;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+        height: 450px;
+    }
+
+        .slideshow-container img {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+            height: 450px;
+            border: solid 1px lightgray;
+        }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px;
+        }
+    }
+
+    #nav #current {
+        background-color: #571456;
+        color: white;
+    }
+
+    #nav a:hover {
+        background-color: #571456;
+        color: white;
+    }
+
+    #nav #servID:hover {
+        background-color: white;
+        color: black;
+    }
+
+    li {
+        cursor: pointer;
+    }
+
+        button {
+            cursor: pointer;
+            font-family: 'Century Gothic';
+            font-size: 19px;
+            background-color: #efefef;
+            border: solid 0.5px lightgray;
+            border-radius: 6px;
+            margin-top: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin-right: 10px;
+        }
+
+            button:hover {
+                background-color: #520f4d;
+                color: white;
+            }
+
+        #divpanel {
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+
+    </style >
+     </head >
+ <body id="bk" >
+      <header >
+          <div id="hdv">
+              <h3 style=" float: left; margin-top:28px;"> <a style="text-decoration:none; color:black;" href="Home - Copy.html"> &nbsp;&nbsp;All About Pets</a> </h3>
+              <nav id="nav">
+
+
+
+                  <a href="Home - Copy.html" style="border-left-style:none;" id="current">&nbsp;Home</a>
+                  <div class="dropdown">
+                      <a style=" cursor:pointer;"  id="servID">&nbsp;Services </a>
+                      <div class="dropdown-content">
+                          <a style="display:block; padding:1px;border-left:none;" href="Shelters - Copy.html">Shelters</a>
+                          <a style="display:block; padding: 1px; border-left:none; border-top:solid 0.5px lightgray;" href="Vets - Copy.html">Vets</a>
+
+                      </div>
+                  </div>
+                  <a href="Pets Info - Copy.html">&nbsp;Pets Info </a>
+                  <a href="Health Tips - Copy.html">&nbsp;Health Tips </a>
+                  <a href="Register - Copy.html">&nbsp;Register </a>
+                  <a href="Login - Copy.html">&nbsp;Login </a>
+                  <a href="Logout - Copy.html">&nbsp;Logout </a>
+              </nav>
+
+          </div>
+        </header>
+   
+
+     <div id="content">
+
+         <div id="divpanel">
+             <input type="text" id="txt" style="width:300px;  font-size:20px; font-family:Arial; border-radius:6px; border-style:solid; border-color:lightgray; border-width:0.5px; padding:5px;">
+             <button style="margin-left: 10px;" onclick="addLI()">Add</button>
+             <button onclick="editLI()">Edit</button>
+             <button onclick="deleteLI()">Delete</button>
+         </div>
+
+         <ul id="list" style="list-style:none;padding:0px;">
+             <li>
+                 <h1> <font color="Black"><p style="text-align:center;background-color:white; width:100%; height:56px;margin-top:20px; margin-bottom:0px">   Home Page   </font></h1>
+             </li>
+             <li>
+                 <h1> <font><p style="text-align: center; color: maroon; font-size:60px; padding:0px; margin:0px; text-shadow:2px 2px 2px white;">  All About Pets  </font></h1>
+             </li>
+             <li>
+                 <div class="slideshow-container">
+
+                     <div class="mySlides fade">
+                         <div class="numbertext">1 / 3</div>
+                         <img src="slidebar1.jpg" style="width:100%">
+                         <!--<div class="text">Caption Text</div>-->
+                     </div>
+
+                     <div class="mySlides fade">
+                         <div class="numbertext">2 / 3</div>
+                         <img src="slidebar2.jpg" style="width:100%">
+                         <!--    <div class="text">Caption Two</div>-->
+                     </div>
+
+                     <div class="mySlides fade">
+                         <div class="numbertext">3 / 3</div>
+                         <img src="slidebar3.jpg" style="width:100%">
+                         <!--   <div class="text">Caption Three</div>-->
+                     </div>
+
+                 </div>
+
+                 <div style="text-align:center">
+                     <span class="dot"></span>
+                     <span class="dot"></span>
+                     <span class="dot"></span>
+                 </div>
+
+
+             </li>
+
+         </ul>
+     </div>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+
+     <script>
+
+         var inputText = document.getElementById("txt"),
+              items = document.querySelectorAll("#list li"),
+              tab = [], index;
+
+         for (var i = 0; i < items.length; i++) {
+             tab.push(items[i].innerHTML);
+         }
+
+         for (var i = 0; i < items.length; i++) {
+
+             items[i].onclick = function () {
+                 index = tab.indexOf(this.innerHTML);
+                 console.log(this.innerHTML + " INDEX = " + index);
+                 inputText.value = this.innerHTML;
+             };
+
+         }
+
+         function refreshArray() {
+             tab.length = 0;
+             items = document.querySelectorAll("#list li");
+             for (var i = 0; i < items.length; i++) {
+                 tab.push(items[i].innerHTML);
+             }
+         }
+         function addLI() {
+
+             var listNode = document.getElementById("list"),
+                 textNode = document.createTextNode(inputText.value),
+                 liNode = document.createElement("LI");
+
+             liNode.appendChild(textNode);
+             listNode.appendChild(liNode);
+
+             refreshArray();
+
+             liNode.onclick = function () {
+                 index = tab.indexOf(liNode.innerHTML);
+                 console.log(liNode.innerHTML + " INDEX = " + index);
+                 inputText.value = liNode.innerHTML;
+             };
+
+         }
+
+         function editLI() {
+             items[index].innerHTML = inputText.value;
+             refreshArray();
+         }
+
+         function deleteLI() {
+
+             refreshArray();
+             if (items.length > 0) {
+                 items[index].parentNode.removeChild(items[index]);
+                 inputText.value = "";
+            }
+        }
+
+     </script>
+
+
+
+</body>
+</html>
